@@ -302,12 +302,31 @@
 				border-radius: 40px;
 				text-align: center;
 				background-color: var(--white);
+				overflow: hidden;
+				position: relative;
 				svg {
-					transition: var(--transition);
+					transition: 0.2s cubic-bezier(0.37, 0.08, 0.02, 0.93);
+				}
+				.top-arry {
+					position: absolute;
+					top: 12px;
+					right: 15px;
+				}
+				.bottom-arry {
+					position: absolute;
+					bottom: -12px;
+					right: 40px;
 				}
 				&:hover {
-					svg {
-						transform: rotate(45deg);
+					.top-arry {
+						position: absolute;
+						top: -12px;
+						right: -5px;
+					}
+					.bottom-arry {
+						position: absolute;
+						bottom: 14px;
+						right: 15px;
 					}
 				}
 			}
@@ -363,7 +382,7 @@
 					box-shadow: var(--shadow);
 				}
 				@include breakpoint(max-lg) {
-					top: 20px;
+					top: 0px;
 				}
 			}
 		}

@@ -2624,12 +2624,31 @@ button {
   border-radius: 40px;
   text-align: center;
   background-color: var(--white);
+  overflow: hidden;
+  position: relative;
 }
 .header__main .menu-btns .menu-arry-btn svg {
-  transition: var(--transition);
+  transition: 0.2s cubic-bezier(0.37, 0.08, 0.02, 0.93);
 }
-.header__main .menu-btns .menu-arry-btn:hover svg {
-  transform: rotate(45deg);
+.header__main .menu-btns .menu-arry-btn .top-arry {
+  position: absolute;
+  top: 12px;
+  right: 15px;
+}
+.header__main .menu-btns .menu-arry-btn .bottom-arry {
+  position: absolute;
+  bottom: -12px;
+  right: 40px;
+}
+.header__main .menu-btns .menu-arry-btn:hover .top-arry {
+  position: absolute;
+  top: -12px;
+  right: -5px;
+}
+.header__main .menu-btns .menu-arry-btn:hover .bottom-arry {
+  position: absolute;
+  bottom: 14px;
+  right: 15px;
 }
 .header__main .menu-btns .menu-btn-one {
   font-size: 18px;
@@ -2679,7 +2698,7 @@ button {
 }
 @media (max-width: 991px) {
   .header-one-area.menu-fixed {
-    top: 20px;
+    top: 0px;
   }
 }
 .header-two-area.menu-fixed {
@@ -3302,6 +3321,7 @@ button {
   color: var(--tertiary-color);
   font-weight: 600;
   text-transform: uppercase;
+  font-family: var(--inter);
   letter-spacing: 1.2px;
 }
 @media (max-width: 575px) {
@@ -5473,6 +5493,18 @@ button {
   max-width: 552px;
   position: sticky;
   top: 0px;
+}
+.faq-four__accordion .accordion-button {
+  font-size: 32px !important;
+  line-height: 48px !important;
+  font-weight: 500 !important;
+  font-family: var(--space-grotesk);
+}
+@media (max-width: 991px) {
+  .faq-four__accordion .accordion-button {
+    font-size: 22px !important;
+    line-height: 36px !important;
+  }
 }
 
 .term-condition-area, .privacy-policy-area {

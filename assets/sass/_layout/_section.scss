@@ -6,6 +6,7 @@
 		color: var(--tertiary-color);
 		font-weight: 600;
 		text-transform: uppercase;
+		font-family: var(--inter);
 		letter-spacing: 1.2px;
 		@include breakpoint(max-sm) {
 			font-size: 16px;
@@ -2358,6 +2359,20 @@
 			max-width: 552px;
 			position: sticky;
 			top: 0px;
+		}
+	}
+	&-four {
+		&__accordion {
+			.accordion-button {
+				font-size: 32px !important;
+				line-height: 48px !important;
+				font-weight: 500 !important;
+				font-family: var(--space-grotesk);
+				@include breakpoint(max-lg) {
+					font-size: 22px !important;
+					line-height: 36px !important;
+				}
+			}
 		}
 	}
 }
