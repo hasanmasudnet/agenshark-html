@@ -62,17 +62,17 @@ CSS TABLE OF CONTENTS
 	// Header area end here ***
 
 	// Gsap Animation area start here ***
-	$(function () {
-		gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+	// $(function () {
+	// 	gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
-		ScrollTrigger.normalizeScroll(false);
+	// 	ScrollTrigger.normalizeScroll(false);
 
-		let smoother = ScrollSmoother.create({
-			smooth: 2,
-			effects: true,
-			content: ".ScrollSmoother-content",
-		});
-	});
+	// 	let smoother = ScrollSmoother.create({
+	// 		smooth: 2,
+	// 		effects: true,
+	// 		content: ".ScrollSmoother-content",
+	// 	});
+	// });
 	// Gsap Animation area end here ***
 
 	// Mouse move paralax area end here ***
