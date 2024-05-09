@@ -2682,7 +2682,6 @@ button {
 }
 .header-one-area {
   top: 60px;
-  background: none !important;
 }
 @media (max-width: 991px) {
   .header-one-area {
@@ -2690,11 +2689,11 @@ button {
   }
 }
 .header-one-area.menu-fixed {
-  top: 60px;
-  box-shadow: none !important;
+  top: 48px;
+  box-shadow: var(--shadow);
 }
 .header-one-area.menu-fixed .header__main-one {
-  box-shadow: var(--shadow);
+  background: transparent;
 }
 @media (max-width: 991px) {
   .header-one-area.menu-fixed {
@@ -6521,4 +6520,6 @@ button {
 
 .animation__goAll3 {
   animation: goAll3 30s infinite linear;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
